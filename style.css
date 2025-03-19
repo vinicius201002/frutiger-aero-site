@@ -1,0 +1,124 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://frutiger-aero.org/img/frutiger-aero-3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    height: 100vh;
+    transition: background-image 1s ease-in-out;
+}
+
+/* Container for centering content */
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    backdrop-filter: blur(2px); /* Glass-like effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styles */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Form and input fields */
+.message-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: left;
+    margin-left: 10px;
+}
+
+input, textarea {
+    padding: 12px;
+    font-size: 14px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+    color: #ffffff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styling */
+.footer {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input, textarea, button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .message-form {
+        gap: 10px;
+    }
+}
