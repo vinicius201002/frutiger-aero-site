@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Bem vindo ao meu site!</h1>
-        <form action="#" method="POST" class="message-form">
+        <form id="messageForm" class="message-form">
             <label for="name">Digite seu nome:</label>
             <input type="text" id="name" name="name" placeholder="Seu nome" required>
             
@@ -17,11 +17,13 @@
             <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea>
 
             <button type="submit">Enviar</button>
+            <a href="mensagens.html" class="view-messages-btn">Ver mensagens</a>
         </form>
+        <div id="messageStatus" class="status-message"></div>
     </div>
     <div class="footer">
         <p>&copy; 2025 Frutiger Aero Mensageiro por Vinicius Oliveira</p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
-<script src="script.js"> </script>

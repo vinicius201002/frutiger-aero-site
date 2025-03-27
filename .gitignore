@@ -1,0 +1,4 @@
+node_modules
+# Ignora todos os .envs
+.env*
+!.env.example

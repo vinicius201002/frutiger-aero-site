@@ -1,0 +1,29 @@
+{
+  "name": "frutiger-aero-site",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinicius201002/frutiger-aero-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinicius201002/frutiger-aero-site/issues"
+  },
+  "homepage": "https://github.com/vinicius201002/frutiger-aero-site#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.13.0",
+    "nodemon": "^3.1.9"
+  }
+}

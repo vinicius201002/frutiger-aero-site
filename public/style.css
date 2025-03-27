@@ -122,3 +122,41 @@ button:hover {
         gap: 10px;
     }
 }
+
+/* Botão Ver Mensagens */
+.view-messages-btn {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.view-messages-btn:hover {
+    background-color: #0b7dda;
+}
+
+/* Mensagem de status */
+.status-message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.status-message.success {
+    background-color: #4CAF50;
+    display: block;
+}
+
+.status-message.error {
+    background-color: #f44336;
+    display: block;
+}
